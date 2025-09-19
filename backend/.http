@@ -1,0 +1,40 @@
+### Register
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "fullName": "Suresh",
+  "email": "nandhyalasuresh143@gmail.com",
+  "phone": "9876543210",
+  "address": "123 Main Street",
+  "password": "123456",
+  "role": "user"
+}
+
+
+### Login
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "nandhyalasuresh143@gmail.com",
+  "password": "123456"
+}
+
+### Profile (replace YOUR_TOKEN below)
+GET http://localhost:5000/api/auth/menu-item
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4Y2NjNjM2OWU2NzYyYzYxMzE0Y2JhNyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MjUwNTU0LCJleHAiOjE3NTgyNTQxNTR9.47kiQatw320xSOdA6X2gHS0xm3GrjwGJwwShjpAaMV4
+
+### Add item to cart
+POST http://localhost:5000/api/auth/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzI1Zjc2NDkyOThlZjI3NjM3MDc4NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MTAwOTA3LCJleHAiOjE3NTgxMDQ1MDd9.Kg-kIiedYaT31dIO0fc2D529vPx2CoUDmnmxOutpl_8
+Content-Type: application/json
+
+{
+  "menuItemId": "68ca2abeb58cf48c7ba8849f",
+  "quantity": 2
+}
+
+### Get cart
+GET http://localhost:5000/api/auth/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4YzI1Zjc2NDkyOThlZjI3NjM3MDc4NiIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNzU4MTAwOTA3LCJleHAiOjE3NTgxMDQ1MDd9.Kg-kIiedYaT31dIO0fc2D529vPx2CoUDmnmxOutpl_8
