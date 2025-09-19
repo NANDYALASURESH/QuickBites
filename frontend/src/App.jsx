@@ -16,6 +16,7 @@ function App() {
         <Route path='/cart' element={<ProtectedRoute><QuickBiteCart /></ProtectedRoute>} />
         <Route path='/login' element={<PublicRoute><Login /></PublicRoute>} />
         <Route path='/home' element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
+        
       </Routes>
     </BrowserRouter>
   );
