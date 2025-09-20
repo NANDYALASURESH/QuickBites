@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import "../src/app.css"
+import "../src/App.css"
 import QuickBiteWelcome from "./pages/welcome"
 import Login from '../src/pages/login';
 import HomePage from './pages/UserDashboard';
