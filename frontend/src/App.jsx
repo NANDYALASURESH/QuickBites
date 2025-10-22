@@ -7,6 +7,9 @@ import HomePage from './pages/UserDashboard';
 import ProtectedRoute from './ProtectedRoute/app';
 import QuickBiteCart from './pages/cart';
 import PublicRoute from './PublicRoute/app';
+import CheckoutPage from "./pages/CheckoutPage"
+import ProfilePage from './pages/ProfilePage';
+import OrderHistoryPage from '../pages/OrderHistoryPage';
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
       <Routes>
         <Route path='/' element={<PublicRoute><QuickBiteWelcome/></PublicRoute>} />
         <Route path='/cart' element={<ProtectedRoute><QuickBiteCart /></ProtectedRoute>} />
+        <Route path='/checkout' element={<ProtectedRoute><CheckoutPage></CheckoutPage></ProtectedRoute>}/>
+        <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
+        <Route path="/orders" element={<ProtectedRoute><OrderHistoryPage /></ProtectedRoute>} />
         <Route path='/login' element={<PublicRoute><Login /></PublicRoute>} />
         <Route path='/home' element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
       </Routes>
