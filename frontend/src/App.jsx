@@ -7,9 +7,10 @@ import HomePage from './pages/UserDashboard';
 import ProtectedRoute from './ProtectedRoute/app';
 import QuickBiteCart from './pages/cart';
 import PublicRoute from './PublicRoute/app';
-import CheckoutPage from "./pages/CheckoutPage"
-import ProfilePage from './pages/ProfilePage';
-import OrderHistoryPage from '../pages/OrderHistoryPage';
+import CheckoutPage from "./pages/CheckoutPage";
+import ProfilePage from "./pages/ProfilePage";
+import OrderHistoryPage from "./pages/OrdersHistory.jsx";
+
 
 function App() {
   return (
